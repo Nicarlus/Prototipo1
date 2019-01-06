@@ -295,6 +295,8 @@
                 <action id="-2" name="Go to layout" sid="613995221320355" type="System">
                     <param id="0" name="Layout">Layout 1</param>
                 </action>
+                <action id="-21" name="Reset global variables" sid="124154530358417" type="System" />
+                <action id="-26" name="Restart layout" sid="403312488865886" type="System" />
             </actions>
         </event-block>
     </events>
