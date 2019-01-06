@@ -2,5 +2,78 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="236833476259196">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="310007643316950" type="Jugador">
+                    <param id="0" name="Object">Coleccionable</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="724291447984284" type="Jugador">
+                    <param id="0" name="Instance variable">ObjetoRecogidos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="451019632777660" type="Coleccionable" />
+            </actions>
+        </event-block>
+        <event-block sid="670554971129582">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="419227207780228" type="Enemigo">
+                    <param id="0" name="Instance variable">Direccion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="985120481251739" type="Enemigo">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="103866091135290">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="889842934641179" type="Enemigo">
+                            <param id="0" name="Object">ColisionadorI</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="494851938824496" type="Enemigo">
+                            <param id="0" name="Instance variable">Direccion</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="585236223181443">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="793933941858917" type="Enemigo">
+                    <param id="0" name="Instance variable">Direccion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="331879072128416" type="Enemigo">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="455912745437218">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="557214313057151" type="Enemigo">
+                            <param id="0" name="Object">ColisionadorD</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="113976608488699" type="Enemigo">
+                            <param id="0" name="Instance variable">Direccion</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
 </c2eventsheet>
