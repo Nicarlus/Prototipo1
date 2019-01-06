@@ -10,7 +10,9 @@
     <unique-id>1j8v4yyyrf3do</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -70,14 +72,6 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747428770630810" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite2" sid="474360874497221">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492794026300202" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -167,15 +161,54 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="ObjetosRecogidos" sid="855357865072682">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ObjetosTotales" sid="247873819523340">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Pared" sid="196538935308584">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="899399932794222">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508244040155863" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Goal" sid="928111527279751">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477097516596480" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ganaste" sid="741553400945372">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Reiniciar" sid="633146054896273">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="527703934371864">
+            <plugin id="Mouse" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Mouse" uid="31" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
