@@ -51,6 +51,18 @@
                         <action id="-26" name="Restart layout" sid="992543970140901" type="System" />
                     </actions>
                 </event-block>
+                <event-block sid="647866330262716">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="179498460278161" type="Jugador">
+                            <param id="0" name="Object">Demonio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="216399391411198" type="Jugador" />
+                        <action id="-21" name="Reset global variables" sid="184462680660252" type="System" />
+                        <action id="-26" name="Restart layout" sid="199527937515219" type="System" />
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="469695921363315" title="Enemigo 1">
@@ -424,6 +436,49 @@
                             <param id="2" name="X">58</param>
                             <param id="3" name="Y">736</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="412971759632185" type="TriggerDemonio" />
+                    </actions>
+                </event-block>
+                <event-block sid="378172479123099">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="969477662962993" type="Demonio" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="272448628747557" type="Demonio">
+                            <param id="0" name="Instance variable">Activo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="403233210609710">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="274420832261866" type="Demonio">
+                            <param id="0" name="Instance variable">Activo</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="592840464170150">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="430859164932285" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="897634389595383" type="Demonio">
+                                    <param id="0" name="X">Jugador.X</param>
+                                    <param id="1" name="Y">Jugador.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="544468137213788">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="0" name="On path found" sid="695846014186981" type="Demonio" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="522735285056933" type="Demonio" />
                     </actions>
                 </event-block>
             </sub-events>

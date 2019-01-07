@@ -16,6 +16,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -219,6 +220,14 @@
         </object-type>
         <object-type name="Demonio" sid="680107168055417">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Activo" sid="138277427811519" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="511619995114483">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="748187554172389" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
