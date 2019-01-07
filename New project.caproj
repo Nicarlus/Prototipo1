@@ -234,6 +234,43 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Obstaculo2" sid="298747613481789">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="384909480171681">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="503122917078810" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemigo3" sid="658593488176486">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Direccion" sid="576836620440728" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="877271631308189">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="566129982621535" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TriggerdelTrigger" sid="705348870546831">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614017328347344" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

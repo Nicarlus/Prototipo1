@@ -51,6 +51,18 @@
                         <action id="-26" name="Restart layout" sid="992543970140901" type="System" />
                     </actions>
                 </event-block>
+                <event-block sid="674585174703529">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="414945042283559" type="Jugador">
+                            <param id="0" name="Object">Enemigo3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="520305638804956" type="Jugador" />
+                        <action id="-21" name="Reset global variables" sid="554314373497282" type="System" />
+                        <action id="-26" name="Restart layout" sid="150692251782649" type="System" />
+                    </actions>
+                </event-block>
                 <event-block sid="647866330262716">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="179498460278161" type="Jugador">
@@ -65,7 +77,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="469695921363315" title="Enemigo 1">
+        <event-group description="" sid="469695921363315" title="Enemigo 1 (Iz-De)">
             <sub-events>
                 <event-block sid="670554971129582">
                     <conditions>
@@ -127,7 +139,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="807157479492190" title="Enemigo 2">
+        <event-group description="" sid="807157479492190" title="Enemigo 2 (Cuadrado)">
             <sub-events>
                 <event-block sid="612817943077397">
                     <conditions>
@@ -238,6 +250,68 @@
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="161199309391796" type="Enemigo2">
+                                    <param id="0" name="Instance variable">Direccion</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="337335463992616" title="Enemigo 3 (Ar-Ab)">
+            <sub-events>
+                <event-block sid="645255918847104">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="664935325213699" type="Enemigo3">
+                            <param id="0" name="Instance variable">Direccion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="779569333804681" type="Enemigo3">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="117965991143915">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="709260311355558" type="Enemigo3">
+                                    <param id="0" name="Object">ColisionadorUp</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="648399983098323" type="Enemigo3">
+                                    <param id="0" name="Instance variable">Direccion</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="941682162641299">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="283081314016676" type="Enemigo3">
+                            <param id="0" name="Instance variable">Direccion</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="978847984153712" type="Enemigo3">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="696760170011259">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="695512438215626" type="Enemigo3">
+                                    <param id="0" name="Object">ColisionadorDown</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="505300933379114" type="Enemigo3">
                                     <param id="0" name="Instance variable">Direccion</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
@@ -423,6 +497,22 @@
         </event-group>
         <event-group description="" sid="596841492100638" title="Demonio">
             <sub-events>
+                <event-block sid="171786979008649">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="110291746864745" type="Jugador">
+                            <param id="0" name="Object">TriggerdelTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="780234374647680" type="System">
+                            <param id="0" name="Object to create">TriggerDemonio</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">4228</param>
+                            <param id="3" name="Y">763</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="658164610694483" type="TriggerdelTrigger" />
+                    </actions>
+                </event-block>
                 <event-block sid="954808595227885">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="267840396539204" type="Jugador">
@@ -433,8 +523,8 @@
                         <action id="-3" name="Create object" sid="821863291611592" type="System">
                             <param id="0" name="Object to create">Demonio</param>
                             <param id="1" name="Layer">&quot;Game&quot;</param>
-                            <param id="2" name="X">58</param>
-                            <param id="3" name="Y">736</param>
+                            <param id="2" name="X">4212</param>
+                            <param id="3" name="Y">574</param>
                         </action>
                         <action id="-9" name="Destroy" sid="412971759632185" type="TriggerDemonio" />
                     </actions>
