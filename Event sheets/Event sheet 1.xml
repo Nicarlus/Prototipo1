@@ -235,69 +235,198 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="589230583304420">
-            <conditions>
-                <condition id="-8" name="Compare two values" sid="383881814989733" type="System">
-                    <param id="0" name="First value">Jugador.ObjetoRecogidos</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">7</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="692863966643506" type="Pared" />
-            </actions>
-        </event-block>
-        <event-block sid="833786231357975">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="316648232524542" type="Jugador">
-                    <param id="0" name="Object">Goal</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="157605153942893" type="System">
-                    <param id="0" name="Layout">Layout 2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="918473001763685">
-            <conditions>
-                <condition id="7" name="Cursor is over object" sid="238082645526647" type="Mouse">
-                    <param id="0" name="Object">Reiniciar</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Set opacity" sid="497956661076968" type="Reiniciar">
-                    <param id="0" name="Opacity">50</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="919705499403610">
-            <conditions>
-                <condition id="7" inverted="1" name="Cursor is over object" sid="400597467552280" type="Mouse">
-                    <param id="0" name="Object">Reiniciar</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Set opacity" sid="723265557951469" type="Reiniciar">
-                    <param id="0" name="Opacity">100</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="298655341834788">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="496861226436256" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Reiniciar</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="613995221320355" type="System">
-                    <param id="0" name="Layout">Layout 1</param>
-                </action>
-                <action id="-21" name="Reset global variables" sid="124154530358417" type="System" />
-                <action id="-26" name="Restart layout" sid="403312488865886" type="System" />
-            </actions>
-        </event-block>
+        <event-group description="" sid="584036087289295" title="Fin Del Juego">
+            <sub-events>
+                <event-block sid="589230583304420">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="383881814989733" type="System">
+                            <param id="0" name="First value">Jugador.ObjetoRecogidos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="692863966643506" type="Pared" />
+                    </actions>
+                </event-block>
+                <event-block sid="833786231357975">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="316648232524542" type="Jugador">
+                            <param id="0" name="Object">Goal</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="157605153942893" type="System">
+                            <param id="0" name="Layout">Fin del Juego</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="918473001763685">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="238082645526647" type="Mouse">
+                            <param id="0" name="Object">Reiniciar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="497956661076968" type="Reiniciar">
+                            <param id="0" name="Opacity">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="919705499403610">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="400597467552280" type="Mouse">
+                            <param id="0" name="Object">Reiniciar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="723265557951469" type="Reiniciar">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="298655341834788">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="496861226436256" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Reiniciar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="613995221320355" type="System">
+                            <param id="0" name="Layout">Nivel 1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="124154530358417" type="System" />
+                        <action id="-26" name="Restart layout" sid="403312488865886" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="758914016491686">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="182954281786743" type="Mouse">
+                            <param id="0" name="Object">VolverAlMenu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="788806682811258" type="VolverAlMenu">
+                            <param id="0" name="Opacity">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="646588589110067">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="166175443743052" type="Mouse">
+                            <param id="0" name="Object">VolverAlMenu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="843045723373673" type="VolverAlMenu">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="237837863858392">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="982623015672900" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">VolverAlMenu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="274646529026943" type="System">
+                            <param id="0" name="Layout">Pantalla de titulo</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="391031792500113" type="System" />
+                        <action id="-26" name="Restart layout" sid="548029364827635" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="360598078688141" title="Pantalla de Titulo">
+            <sub-events>
+                <event-block sid="295028245489365">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="191735059230481" type="Mouse">
+                            <param id="0" name="Object">Comenzar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="383103482534834" type="Comenzar">
+                            <param id="0" name="Opacity">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="388855889860720">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="976839697818516" type="Mouse">
+                            <param id="0" name="Object">Comenzar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="762618196636388" type="Comenzar">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="920287782928437">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="313782451096479" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Comenzar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="679697572963656" type="System">
+                            <param id="0" name="Layout">Nivel 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="770079849187782">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="318727174582959" type="Mouse">
+                            <param id="0" name="Object">Creditos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="729513975340326" type="Creditos">
+                            <param id="0" name="Opacity">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="944512619439184">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="488255180447347" type="Mouse">
+                            <param id="0" name="Object">Creditos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="145205183375913" type="Creditos">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="596841492100638" title="Demonio">
+            <sub-events>
+                <event-block sid="954808595227885">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="267840396539204" type="Jugador">
+                            <param id="0" name="Object">TriggerDemonio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="821863291611592" type="System">
+                            <param id="0" name="Object to create">Demonio</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">58</param>
+                            <param id="3" name="Y">736</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

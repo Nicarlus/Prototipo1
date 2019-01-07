@@ -197,11 +197,40 @@
         <object-type name="Mouse" sid="527703934371864">
             <plugin id="Mouse" />
         </object-type>
+        <object-type name="Titulo" sid="289151137472272">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Comenzar" sid="723259248681192">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Creditos" sid="672086234526798">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="VolverAlMenu" sid="731811911997852">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TriggerDemonio" sid="831694651585299">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983681512014660" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Demonio" sid="680107168055417">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="748187554172389" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
-        <layout>Layout 2.xml</layout>
+        <layout>Nivel 1.xml</layout>
+        <layout>Fin del Juego.xml</layout>
+        <layout>Pantalla de titulo.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>

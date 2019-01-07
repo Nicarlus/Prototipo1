@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 2</name>
+    <name>Fin del Juego</name>
     <sid>702541873954397</sid>
     <event-sheet>Event sheet 1</event-sheet>
     <size>
@@ -60,7 +60,7 @@
                     <properties>
                         <text>Reiniciar</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-29,400,0</font>
+                        <font>Arial,-35,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -71,11 +71,38 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>354</x>
-                        <y>278</y>
+                        <x>352</x>
+                        <y>265</y>
                         <z>0</z>
-                        <width>141</width>
-                        <height>46</height>
+                        <width>184</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="VolverAlMenu" uid="35">
+                    <properties>
+                        <text>Volver al Menu</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-21,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>325</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>43</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
