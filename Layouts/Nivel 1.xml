@@ -206,8 +206,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4228</x>
-                        <y>951</y>
+                        <x>2460</x>
+                        <y>1884</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -380,10 +380,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1999</x>
+                        <x>1986.5</x>
                         <y>1902</y>
                         <z>0</z>
-                        <width>166</width>
+                        <width>191</width>
                         <height>734</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2292,10 +2292,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2613</x>
+                        <x>2489</x>
                         <y>-140</y>
                         <z>0</z>
-                        <width>5475</width>
+                        <width>5723</width>
                         <height>314</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -2335,7 +2335,7 @@
                 </instance>
                 <instance type="TriggerdelTrigger" uid="84">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -2343,8 +2343,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4224</x>
-                        <y>647</y>
+                        <x>4216</x>
+                        <y>614</y>
                         <z>0</z>
                         <width>696</width>
                         <height>30</height>
@@ -2357,7 +2357,7 @@
                 </instance>
                 <instance type="TriggerDemonio" uid="85">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
