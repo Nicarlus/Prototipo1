@@ -321,6 +321,150 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="596841492100638" title="Demonio">
+            <sub-events>
+                <event-block sid="171786979008649">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="110291746864745" type="Jugador">
+                            <param id="0" name="Object">TriggerdelTrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="780234374647680" type="System">
+                            <param id="0" name="Object to create">TriggerDemonio</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">4228</param>
+                            <param id="3" name="Y">763</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="658164610694483" type="TriggerdelTrigger" />
+                    </actions>
+                </event-block>
+                <event-block sid="954808595227885">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="267840396539204" type="Jugador">
+                            <param id="0" name="Object">TriggerDemonio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="821863291611592" type="System">
+                            <param id="0" name="Object to create">Demonio</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="X">4212</param>
+                            <param id="3" name="Y">574</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="412971759632185" type="TriggerDemonio" />
+                    </actions>
+                </event-block>
+                <event-block sid="378172479123099">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="969477662962993" type="Demonio" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="272448628747557" type="Demonio">
+                            <param id="0" name="Instance variable">Activo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="403233210609710">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="274420832261866" type="Demonio">
+                            <param id="0" name="Instance variable">Activo</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="592840464170150">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="430859164932285" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="897634389595383" type="Demonio">
+                                    <param id="0" name="X">Jugador.X</param>
+                                    <param id="1" name="Y">Jugador.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="544468137213788">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="0" name="On path found" sid="695846014186981" type="Demonio" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="522735285056933" type="Demonio" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="360598078688141" title="Pantalla de Titulo">
+            <sub-events>
+                <event-block sid="295028245489365">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="191735059230481" type="Mouse">
+                            <param id="0" name="Object">Comenzar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="383103482534834" type="Comenzar">
+                            <param id="0" name="Opacity">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="388855889860720">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="976839697818516" type="Mouse">
+                            <param id="0" name="Object">Comenzar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="762618196636388" type="Comenzar">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="920287782928437">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="313782451096479" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Comenzar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="679697572963656" type="System">
+                            <param id="0" name="Layout">Nivel 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="770079849187782">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="318727174582959" type="Mouse">
+                            <param id="0" name="Object">Creditos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="729513975340326" type="Creditos">
+                            <param id="0" name="Opacity">50</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="944512619439184">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="488255180447347" type="Mouse">
+                            <param id="0" name="Object">Creditos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="145205183375913" type="Creditos">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="584036087289295" title="Fin Del Juego">
             <sub-events>
                 <event-block sid="589230583304420">
@@ -425,150 +569,6 @@
                         </action>
                         <action id="-21" name="Reset global variables" sid="391031792500113" type="System" />
                         <action id="-26" name="Restart layout" sid="548029364827635" type="System" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="360598078688141" title="Pantalla de Titulo">
-            <sub-events>
-                <event-block sid="295028245489365">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="191735059230481" type="Mouse">
-                            <param id="0" name="Object">Comenzar</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="383103482534834" type="Comenzar">
-                            <param id="0" name="Opacity">50</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="388855889860720">
-                    <conditions>
-                        <condition id="7" inverted="1" name="Cursor is over object" sid="976839697818516" type="Mouse">
-                            <param id="0" name="Object">Comenzar</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="762618196636388" type="Comenzar">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="920287782928437">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="313782451096479" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">Comenzar</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="679697572963656" type="System">
-                            <param id="0" name="Layout">Nivel 1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="770079849187782">
-                    <conditions>
-                        <condition id="7" name="Cursor is over object" sid="318727174582959" type="Mouse">
-                            <param id="0" name="Object">Creditos</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="729513975340326" type="Creditos">
-                            <param id="0" name="Opacity">50</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="944512619439184">
-                    <conditions>
-                        <condition id="7" inverted="1" name="Cursor is over object" sid="488255180447347" type="Mouse">
-                            <param id="0" name="Object">Creditos</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="145205183375913" type="Creditos">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="596841492100638" title="Demonio">
-            <sub-events>
-                <event-block sid="171786979008649">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="110291746864745" type="Jugador">
-                            <param id="0" name="Object">TriggerdelTrigger</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="780234374647680" type="System">
-                            <param id="0" name="Object to create">TriggerDemonio</param>
-                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                            <param id="2" name="X">4228</param>
-                            <param id="3" name="Y">763</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="658164610694483" type="TriggerdelTrigger" />
-                    </actions>
-                </event-block>
-                <event-block sid="954808595227885">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="267840396539204" type="Jugador">
-                            <param id="0" name="Object">TriggerDemonio</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="821863291611592" type="System">
-                            <param id="0" name="Object to create">Demonio</param>
-                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                            <param id="2" name="X">4212</param>
-                            <param id="3" name="Y">574</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="412971759632185" type="TriggerDemonio" />
-                    </actions>
-                </event-block>
-                <event-block sid="378172479123099">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="969477662962993" type="Demonio" />
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="272448628747557" type="Demonio">
-                            <param id="0" name="Instance variable">Activo</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="403233210609710">
-                    <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="274420832261866" type="Demonio">
-                            <param id="0" name="Instance variable">Activo</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="592840464170150">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="430859164932285" type="System">
-                                    <param id="0" name="Interval (seconds)">0.5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="Pathfinding" id="0" name="Find path" sid="897634389595383" type="Demonio">
-                                    <param id="0" name="X">Jugador.X</param>
-                                    <param id="1" name="Y">Jugador.Y</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="544468137213788">
-                    <conditions>
-                        <condition behavior="Pathfinding" id="0" name="On path found" sid="695846014186981" type="Demonio" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Pathfinding" id="1" name="Move along path" sid="522735285056933" type="Demonio" />
                     </actions>
                 </event-block>
             </sub-events>
