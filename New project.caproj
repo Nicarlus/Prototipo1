@@ -85,8 +85,9 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="397843744182127" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="397843744182127" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Arboles.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Arboles.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -268,6 +269,548 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614017328347344" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiraDeArboles" sid="302169746819913">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="522809049230613">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854479414560711" speed="5">
+                    <frame duration="1" hotspotX="0.581301" hotspotY="0.504907" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Arboles.png">
+                        <collision-poly>
+                            <point x="0.0772358" y="0.044711" />
+                            <point x="0.463415" y="0.04253" />
+                            <point x="0.869919" y="0.04253" />
+                            <point x="0.869919" y="0.504908" />
+                            <point x="0.869919" y="0.986914" />
+                            <point x="0.512195" y="0.986914" />
+                            <point x="0.0772358" y="0.986914" />
+                            <point x="0.0772358" y="0.504907" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MurallasInicio" sid="946289035604489">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="473141861831198">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="736912082033594" speed="5">
+                    <frame duration="1" hotspotX="0.502994" hotspotY="0.502857" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Mu1.png">
+                        <collision-poly>
+                            <point x="0.101796" y="0.125714" />
+                            <point x="0.497006" y="0.125714" />
+                            <point x="0.928143" y="0.125714" />
+                            <point x="0.926648" y="0.334285" />
+                            <point x="0.329341" y="0.337143" />
+                            <point x="0.330838" y="0.897144" />
+                            <point x="0.101796" y="0.897143" />
+                            <point x="0.101796" y="0.497143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Casas1" sid="370911005199969">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="311057883653821">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="110870984618418" speed="5">
+                    <frame duration="1" hotspotX="0.500931" hotspotY="0.5" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Casa1.png">
+                        <collision-poly>
+                            <point x="0.126629" y="0.147059" />
+                            <point x="0.484171" y="0.145221" />
+                            <point x="0.880819" y="0.1875" />
+                            <point x="0.94041" y="0.547794" />
+                            <point x="0.891993" y="0.915441" />
+                            <point x="0.487896" y="0.955883" />
+                            <point x="0.0670391" y="0.922794" />
+                            <point x="0.0260708" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Huesitos" sid="596442342271401">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="425557909023528">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520538199815568" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Huesitos.png">
+                        <collision-poly>
+                            <point x="0.122581" y="0.151515" />
+                            <point x="0.485484" y="0.0454546" />
+                            <point x="0.845161" y="0.139394" />
+                            <point x="0.940323" y="0.454545" />
+                            <point x="0.843548" y="0.862121" />
+                            <point x="0.477419" y="0.945454" />
+                            <point x="0.139516" y="0.860606" />
+                            <point x="0.0145161" y="0.487879" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Arbolacos" sid="618354107685726">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="337937657137303">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="198518343483571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Arboledaverde1.png">
+                        <collision-poly>
+                            <point x="0.102532" y="0.100242" />
+                            <point x="0.302531" y="0.10145" />
+                            <point x="0.306329" y="0.493961" />
+                            <point x="0.467722" y="0.494866" />
+                            <point x="0.467089" y="0.736109" />
+                            <point x="0.93038" y="0.735506" />
+                            <point x="0.93038" y="0.942029" />
+                            <point x="0.1" y="0.942028" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Muralla" sid="907374421777419">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="904584151427126">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627793790989523" speed="5">
+                    <frame duration="1" hotspotX="0.494963" hotspotY="0.541936" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Pared4.png">
+                        <collision-poly>
+                            <point x="0.00335796" y="0.0258065" />
+                            <point x="0.991941" y="0.0258065" />
+                            <point x="0.993284" y="0.96129" />
+                            <point x="0.00335796" y="0.948387" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Rejas" sid="377384857071574">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="196346440011927">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518047458140379" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502994" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\reja.png">
+                        <collision-poly>
+                            <point x="0.968919" y="0.0479042" />
+                            <point x="0.968919" y="0.946106" />
+                            <point x="0.0283783" y="0.946107" />
+                            <point x="0.0283784" y="0.0479047" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MurallasPequeñas" sid="988558848577233">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="142146453009373">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869509540352723" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.48827" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Pared2A.png">
+                        <collision-poly>
+                            <point x="0.0384612" y="0.00146628" />
+                            <point x="0.955128" y="0.00146628" />
+                            <point x="0.955128" y="1" />
+                            <point x="0.0384615" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Casas2" sid="250013829068099">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="616749594618850">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="139272114886910" speed="5">
+                    <frame duration="1" hotspotX="0.494024" hotspotY="0.497917" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Casa2.png">
+                        <collision-poly>
+                            <point x="0.141434" y="0.145833" />
+                            <point x="0.523904" y="0.114583" />
+                            <point x="0.870518" y="0.158333" />
+                            <point x="0.932271" y="0.560417" />
+                            <point x="0.878486" y="0.9375" />
+                            <point x="0.482072" y="0.985417" />
+                            <point x="0.0697211" y="0.929167" />
+                            <point x="0.059761" y="0.347917" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MurallaGrande" sid="121827475624996">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="136698908459441">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="115036777417235" speed="5">
+                    <frame duration="1" hotspotX="0.498908" hotspotY="0.569231" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Pared6.png">
+                        <collision-poly>
+                            <point x="0.383734" y="0.592308" />
+                            <point x="0.383733" y="0" />
+                            <point x="0.593886" y="0" />
+                            <point x="0.593887" y="0.592308" />
+                            <point x="0.995633" y="0.592308" />
+                            <point x="0.995633" y="0.992308" />
+                            <point x="0.00327511" y="0.992308" />
+                            <point x="0.00327498" y="0.592308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CampoCalabazas" sid="736394199489728">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="192386767981099">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="670311517052234" speed="5">
+                    <frame duration="1" hotspotX="0.513877" hotspotY="0.491672" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Campo de Calabazas.png">
+                        <collision-poly>
+                            <point x="0.0151388" y="0.00493522" />
+                            <point x="0.153911" y="0.00493528" />
+                            <point x="0.153911" y="0.378162" />
+                            <point x="0.224558" y="0.378162" />
+                            <point x="0.224558" y="0.282542" />
+                            <point x="0.340622" y="0.282542" />
+                            <point x="0.342514" y="0.378162" />
+                            <point x="0.432296" y="0.378162" />
+                            <point x="0.432296" y="0.176434" />
+                            <point x="0.565181" y="0.176434" />
+                            <point x="0.565181" y="0.378162" />
+                            <point x="0.658537" y="0.378162" />
+                            <point x="0.659378" y="0.275756" />
+                            <point x="0.777965" y="0.275756" />
+                            <point x="0.778806" y="0.378162" />
+                            <point x="0.864592" y="0.378162" />
+                            <point x="0.864592" y="0.0180445" />
+                            <point x="0.995795" y="0.0188156" />
+                            <point x="0.995795" y="0.788402" />
+                            <point x="0.886459" y="0.788403" />
+                            <point x="0.886459" y="0.996299" />
+                            <point x="0.189235" y="0.996299" />
+                            <point x="0.189235" y="0.784083" />
+                            <point x="0.0151388" y="0.784084" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tumba1" sid="579995100714117">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="682596183939475">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129808083194072" speed="5">
+                    <frame duration="1" hotspotX="0.521951" hotspotY="0.515528" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Tumba1.png">
+                        <collision-poly>
+                            <point x="0.0121951" y="0.00931678" />
+                            <point x="0.997561" y="0.00931679" />
+                            <point x="0.995122" y="0.993789" />
+                            <point x="0.0121951" y="0.993789" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tumba2" sid="420522728933027">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="196536261737130">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856803440260611" speed="5">
+                    <frame duration="1" hotspotX="0.49635" hotspotY="0.516517" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Tumba2.png">
+                        <collision-poly>
+                            <point x="0.0170316" y="0.018018" />
+                            <point x="0.973236" y="0.024024" />
+                            <point x="0.973236" y="0.993994" />
+                            <point x="0.0170316" y="0.993994" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tumba3" sid="292752847597593">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="627529954003641">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="715158282532425" speed="5">
+                    <frame duration="1" hotspotX="0.505025" hotspotY="0.508671" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Tumba3.png">
+                        <collision-poly>
+                            <point x="0.00251256" y="0.0606936" />
+                            <point x="1" y="0.0606937" />
+                            <point x="1" y="0.988439" />
+                            <point x="0.00251257" y="0.988439" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tumba4" sid="673801765064509">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="744643068355481">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="419677362051571" speed="5">
+                    <frame duration="1" hotspotX="0.517073" hotspotY="0.502994" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Tumba4.png">
+                        <collision-poly>
+                            <point x="0.0243902" y="0.0508982" />
+                            <point x="0.982927" y="0.0508982" />
+                            <point x="0.982927" y="0.973054" />
+                            <point x="0.0243902" y="0.973054" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tumba5" sid="170307812155766">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="811479125626112">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="910117008699916" speed="5">
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.509036" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Tumba5.png">
+                        <collision-poly>
+                            <point x="0.00253165" y="0.0120482" />
+                            <point x="0.992405" y="0.0120482" />
+                            <point x="0.992405" y="0.957831" />
+                            <point x="0.00253162" y="0.96988" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tumba6" sid="532093043037909">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="690667014346551">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="840766311575491" speed="5">
+                    <frame duration="1" hotspotX="0.505455" hotspotY="0.486815" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Tumba6.png">
+                        <collision-poly>
+                            <point x="0" y="0.00202841" />
+                            <point x="0.996364" y="0.0020284" />
+                            <point x="0.996364" y="0.985801" />
+                            <point x="3.46791e-009" y="0.985801" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Calabaza1" sid="785078921290880">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="181738711087670">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355248105398196" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.451923" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Calabaza1.png">
+                        <collision-poly>
+                            <point x="0.197183" y="0.211538" />
+                            <point x="0.5" y="0.00961538" />
+                            <point x="0.809859" y="0.211538" />
+                            <point x="0.901408" y="0.451923" />
+                            <point x="0.873239" y="0.778846" />
+                            <point x="0.5" y="0.884615" />
+                            <point x="0.126761" y="0.788462" />
+                            <point x="0.0985916" y="0.451923" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Calabaza2" sid="862634869207255">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="640186242518989">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="974235371234796" speed="5">
+                    <frame duration="1" hotspotX="0.479167" hotspotY="0.423077" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Calabaza2.png">
+                        <collision-poly>
+                            <point x="0.201389" y="0.221154" />
+                            <point x="0.472222" y="0.0769231" />
+                            <point x="0.777778" y="0.182692" />
+                            <point x="0.902778" y="0.413462" />
+                            <point x="0.861111" y="0.75" />
+                            <point x="0.472222" y="0.884615" />
+                            <point x="0.138889" y="0.721154" />
+                            <point x="0.111111" y="0.413462" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MurallaDemonio" sid="534268948371587">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="789246033944481">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="783537684346036" speed="5">
+                    <frame duration="1" hotspotX="0.504211" hotspotY="0.496753" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\MurallaRoja.png">
+                        <collision-poly>
+                            <point x="0.0168421" y="0.00162338" />
+                            <point x="0.978947" y="0.00162338" />
+                            <point x="0.978947" y="0.549512" />
+                            <point x="0.749474" y="0.549513" />
+                            <point x="0.749474" y="0.95617" />
+                            <point x="0.610526" y="0.957793" />
+                            <point x="0.610526" y="0.462662" />
+                            <point x="0.833158" y="0.463271" />
+                            <point x="0.832632" y="0.129465" />
+                            <point x="0.155526" y="0.130581" />
+                            <point x="0.156316" y="0.462054" />
+                            <point x="0.40421" y="0.462663" />
+                            <point x="0.403158" y="0.960229" />
+                            <point x="0.261579" y="0.959823" />
+                            <point x="0.260263" y="0.544847" />
+                            <point x="0.0168421" y="0.545455" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MurallaFinal" sid="329872990039604">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="364218669177270">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410862328808169" speed="5">
+                    <frame duration="1" hotspotX="0.526018" hotspotY="0.498721" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\ArboledaRoja.png">
+                        <collision-poly>
+                            <point x="0.0395927" y="0.0498721" />
+                            <point x="0.263575" y="0.0498721" />
+                            <point x="0.263575" y="0.70844" />
+                            <point x="0.734163" y="0.708444" />
+                            <point x="0.734163" y="0.0498721" />
+                            <point x="0.976244" y="0.0498721" />
+                            <point x="0.976244" y="0.968031" />
+                            <point x="0.0395927" y="0.968031" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="798771370328388">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925471174541834" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Muralla1.png">
+                        <collision-poly>
+                            <point x="0.0473373" y="0.0429769" />
+                            <point x="0.951677" y="0.0429769" />
+                            <point x="0.951677" y="0.916143" />
+                            <point x="0.810651" y="0.916143" />
+                            <point x="0.809664" y="0.275681" />
+                            <point x="0.188363" y="0.27673" />
+                            <point x="0.18639" y="0.942872" />
+                            <point x="0.0473373" y="0.943396" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fondo" sid="629988661750755">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="404155925079855" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Textura Suelo.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ArbolesArriba" sid="321035805775801">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="661577864751712">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="271643839526413" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repositorios\Prototipo1\Sprites\Arbusto.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.2" />
+                            <point x="0.5" y="0.113333" />
+                            <point x="0.760714" y="0.223333" />
+                            <point x="0.932143" y="0.5" />
+                            <point x="0.903572" y="0.943333" />
+                            <point x="0.0821429" y="0.943333" />
+                            <point x="0.0464286" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
