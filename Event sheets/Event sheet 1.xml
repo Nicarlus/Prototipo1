@@ -6,6 +6,30 @@
         <variable constant="0" name="ColeccionablesHUD" sid="374044974473410" static="0" type="number">0</variable>
         <event-group description="" sid="364728550836538" title="Jugador">
             <sub-events>
+                <event-block sid="614683802501566">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="479805791468252" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="263446200858328" type="Jugador">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="704367826572669">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="591132071301490" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="917752958257673" type="Jugador">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="236833476259196">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="310007643316950" type="Jugador">
@@ -63,6 +87,18 @@
                         <action id="-26" name="Restart layout" sid="150692251782649" type="System" />
                     </actions>
                 </event-block>
+                <event-block sid="745088217052184">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="665796449468954" type="Jugador">
+                            <param id="0" name="Object">Momia</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="578692960113272" type="Jugador" />
+                        <action id="-21" name="Reset global variables" sid="707774813659717" type="System" />
+                        <action id="-26" name="Restart layout" sid="378032620285850" type="System" />
+                    </actions>
+                </event-block>
                 <event-block sid="647866330262716">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="179498460278161" type="Jugador">
@@ -104,6 +140,9 @@
                                     <param id="0" name="Instance variable">Direccion</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="7" name="Set mirrored" sid="876959264935994" type="Zombie">
+                                    <param id="0" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -132,6 +171,9 @@
                                 <action id="-10" name="Set value" sid="113976608488699" type="Zombie">
                                     <param id="0" name="Instance variable">Direccion</param>
                                     <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="340036217558380" type="Zombie">
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -166,6 +208,9 @@
                                     <param id="0" name="Instance variable">Direccion</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="7" name="Set mirrored" sid="404687875815492" type="Momia">
+                                    <param id="0" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -194,6 +239,9 @@
                                 <action id="-10" name="Set value" sid="413876832742375" type="Momia">
                                     <param id="0" name="Instance variable">Direccion</param>
                                     <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="373103533664498" type="Momia">
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -257,6 +305,9 @@
                                     <param id="0" name="Instance variable">Direccion</param>
                                     <param id="1" name="Value">2</param>
                                 </action>
+                                <action id="7" name="Set mirrored" sid="883709529573849" type="Bruja">
+                                    <param id="0" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -314,6 +365,9 @@
                                 <action id="-10" name="Set value" sid="161199309391796" type="Bruja">
                                     <param id="0" name="Instance variable">Direccion</param>
                                     <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="208952274544477" type="Bruja">
+                                    <param id="0" name="State">1</param>
                                 </action>
                             </actions>
                         </event-block>

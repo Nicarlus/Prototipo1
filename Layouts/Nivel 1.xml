@@ -3996,6 +3996,7 @@
                     </properties>
                     <instance-variables>
                         <ObjetoRecogidos>0</ObjetoRecogidos>
+                        <Active>false</Active>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -4018,8 +4019,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1471</x>
-                        <y>3127</y>
+                        <x>940</x>
+                        <y>1340</y>
                         <z>0</z>
                         <width>55.778720856</width>
                         <height>95.834854126</height>
